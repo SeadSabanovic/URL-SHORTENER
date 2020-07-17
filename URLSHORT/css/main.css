@@ -1,0 +1,117 @@
+:root {
+    --main_color: rgb(74,124,89);
+    --main_dark: rgb(66, 66, 66);
+    --main_blue: rgb(104,176,171);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+    background: linear-gradient(90deg, rgb(200,213,185) 0%, rgb(250,243,221) 100%);
+    overflow-x: hidden;
+}
+.main-wrapp {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.main-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-container h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: #fff;
+    margin: 2rem 0;
+    color: var(--main_blue);
+    text-transform: uppercase;
+}
+.main-container form {
+    min-width: 300px;
+    max-width: 800px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 0 20px;
+}
+.main-container form input {
+    width: 90%;
+    padding: 8px 13px;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    color: var(--main_dark);
+    box-shadow: 
+        inset 0 7px 9px -7px rgba(0,0,0,0.7),
+        inset 7px 0 9px -7px rgba(0,0,0,0.4);
+}
+.main-container form button {
+    width: 10%;
+    padding: 8px 13px;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    color: #fff;
+    background: var(--main_color);
+    box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.7);
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+}
+.main-container form button:hover {
+    background: var(--main_blue);
+}
+@media (max-width: 500px) {
+    .main-container form input {
+        width: 80%;
+    }
+    .main-container form button {
+        width: 20%;
+    }
+}
+
+.main-container h2 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #fff;
+    margin: 2rem 0;
+    color: var(--main_blue);
+}
+.main-container p {
+    margin: 1rem 0;
+}
+.error {
+    color: rgb(223, 74, 48);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.short_url {
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+.short_url a {
+    text-decoration: none;
+    color: var(--main_color);
+    font-size: 1.2rem;
+    text-overflow: ellipsis;
+}
+.short_url a:hover {
+    color: var(--main_blue);
+}
